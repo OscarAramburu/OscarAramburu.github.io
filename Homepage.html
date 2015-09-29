@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>Homepage</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Homepage Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Homepage </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/python.html">Python</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/Homepage.html" rel="bookmark"
+           title="Permalink to Homepage">Homepage</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-09-29T00:00:00+02:00">
+                Published: mar 29 septiembre 2015
+        </abbr>
+		<br />
+        <abbr class="modified" title="2015-09-29T00:00:00+02:00">
+                Updated: mar 29 septiembre 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/oscar.html">Oscar</a>
+        </address>
+<p>In <a href="/category/python.html">Python</a>.</p>
+<p>tags: <a href="/tag/thats.html">thats</a> </p>
+</footer><!-- /.post-info -->      <div class="section" id="introduccion">
+<span id="rst-tutorial"></span><h2>Introduccion</h2>
+<p>La sintaxis RST proporciona  una facil de leer...</p>
+</div>
+<div class="section" id="formateo-de-texto">
+<h2>Formateo de texto</h2>
+<div class="section" id="markup-dentro-de-linea-y-caracteres-especiales">
+<h3>Markup dentro de linea y caracteres especiales</h3>
+<p>Por ejemplo estos es <em>cursiva</em>, esto <strong>negrita</strong>, esto <a class="reference external" href="http://www.python.org">python</a> y esto <tt class="docutils literal">codigo&nbsp;&nbsp; fuente`</tt></p>
+</div>
+<div class="section" id="links-externos-e-internos">
+<h3>Links externos e internos</h3>
+<p><a class="reference external" href="http://www.python.org/">http://www.python.org/</a></p>
+<p><a class="reference external" href="http://www.python.org/">python2</a></p>
+<p><a class="reference internal" href="#markup-dentro-de-linea-y-caracteres-especiales">Markup dentro de linea y caracteres especiales</a></p>
+</div>
+<div class="section" id="links-explicitos">
+<h3>Links explicitos</h3>
+<p><a class="reference internal" href="#rst-tutorial">rst_tutorial</a></p>
+</div>
+<div class="section" id="listas">
+<h3>Listas</h3>
+<ul>
+<li><p class="first">This is a bulleted list:</p>
+</li>
+<li><p class="first">It has two items, the second item uses two lines.</p>
+<blockquote>
+<ul class="simple">
+<li>Indent</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<ol class="arabic simple">
+<li>This is a numbered list.</li>
+<li>It has two items too.<ol class="arabic">
+<li>Indent</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="que-son-las-directivas">
+<h2>Que son las directivas</h2>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">local</span><span class="p">(</span><span class="s">&#39;pelican -s publishconf.py&#39;</span><span class="p">)</span>
+<span class="n">project</span><span class="o">.</span><span class="n">rsync_project</span><span class="p">(</span>
+    <span class="n">remote_dir</span><span class="o">=</span><span class="n">dest_path</span><span class="p">,</span>
+    <span class="n">exclude</span><span class="o">=</span><span class="s">&quot;.DS_Store&quot;</span><span class="p">,</span>
+    <span class="n">local_dir</span><span class="o">=</span><span class="n">DEPLOY_PATH</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span><span class="p">,</span>
+    <span class="n">delete</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">extra_opts</span><span class="o">=</span><span class="s">&#39;-c&#39;</span><span class="p">,</span>
+</pre></div>
+</td></tr></table><p>Esto es un ejemplo de codigo:</p>
+<pre class="literal-block">
+local('pelican -s publishconf.py')
+project.rsync_project(
+    remote_dir=dest_path,
+    exclude=&quot;.DS_Store&quot;,
+    local_dir=DEPLOY_PATH.rstrip('/') + '/',
+    delete=True,
+    extra_opts='-c',
+</pre>
+</div>
+<div class="section" id="tablas-simples">
+<h2>Tablas simples</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="33%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="incluir-imagenes">
+<h2>Incluir imagenes</h2>
+<img alt="" src="static/imagen_corporativa.jpg" />
+</div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

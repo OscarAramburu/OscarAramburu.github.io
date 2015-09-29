@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Homepage</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2015-09-29T00:00:00+02:00</updated><entry><title>Homepage</title><link href="/Homepage.html" rel="alternate"></link><updated>2015-09-29T00:00:00+02:00</updated><author><name>Oscar</name></author><id>tag:,2015-09-29:Homepage.html</id><summary type="html">&lt;div class="section" id="introduccion"&gt;
+&lt;span id="rst-tutorial"&gt;&lt;/span&gt;&lt;h2&gt;Introduccion&lt;/h2&gt;
+&lt;p&gt;La sintaxis RST proporciona  una facil de leer...&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="formateo-de-texto"&gt;
+&lt;h2&gt;Formateo de texto&lt;/h2&gt;
+&lt;div class="section" id="markup-dentro-de-linea-y-caracteres-especiales"&gt;
+&lt;h3&gt;Markup dentro de linea y caracteres especiales&lt;/h3&gt;
+&lt;p&gt;Por ejemplo estos es &lt;em&gt;cursiva&lt;/em&gt;, esto &lt;strong&gt;negrita&lt;/strong&gt;, esto &lt;a class="reference external" href="http://www.python.org"&gt;python&lt;/a&gt; y esto &lt;tt class="docutils literal"&gt;codigo&amp;nbsp;&amp;nbsp; fuente`&lt;/tt&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links-externos-e-internos"&gt;
+&lt;h3&gt;Links externos e internos&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.python.org/"&gt;http://www.python.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.python.org/"&gt;python2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference internal" href="#markup-dentro-de-linea-y-caracteres-especiales"&gt;Markup dentro de linea y caracteres especiales&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links-explicitos"&gt;
+&lt;h3&gt;Links explicitos&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference internal" href="#rst-tutorial"&gt;rst_tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="listas"&gt;
+&lt;h3&gt;Listas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;This is a bulleted list:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;It has two items, the second item uses two lines.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Indent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;This is a numbered list.&lt;/li&gt;
+&lt;li&gt;It has two items too.&lt;ol class="arabic"&gt;
+&lt;li&gt;Indent&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="que-son-las-directivas"&gt;
+&lt;h2&gt;Que son las directivas&lt;/h2&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;pelican -s publishconf.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;project&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rsync_project&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;remote_dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;dest_path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.DS_Store&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;local_dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;DEPLOY_PATH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rstrip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;delete&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;extra_opts&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;-c&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;Esto es un ejemplo de codigo:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+local('pelican -s publishconf.py')
+project.rsync_project(
+    remote_dir=dest_path,
+    exclude=&amp;quot;.DS_Store&amp;quot;,
+    local_dir=DEPLOY_PATH.rstrip('/') + '/',
+    delete=True,
+    extra_opts='-c',
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tablas-simples"&gt;
+&lt;h2&gt;Tablas simples&lt;/h2&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="25%" /&gt;
+&lt;col width="33%" /&gt;
+&lt;col width="21%" /&gt;
+&lt;col width="21%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="incluir-imagenes"&gt;
+&lt;h2&gt;Incluir imagenes&lt;/h2&gt;
+&lt;img alt="" src="static/imagen_corporativa.jpg" /&gt;
+&lt;/div&gt;
+</summary><category term="thats"></category></entry></feed>
