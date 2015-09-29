@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Homepage</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2015-09-29T00:00:00+02:00</updated><entry><title>Homepage</title><link href="/Homepage.html" rel="alternate"></link><updated>2015-09-29T00:00:00+02:00</updated><author><name>Oscar</name></author><id>tag:,2015-09-29:Homepage.html</id><summary type="html">&lt;div class="section" id="introduccion"&gt;
+&lt;h2&gt;Introduccion&lt;/h2&gt;
+&lt;p&gt;La sintaxis RST proporciona  una facil de leer...&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="formateo-de-texto"&gt;
+&lt;h2&gt;Formateo de texto&lt;/h2&gt;
+&lt;div class="section" id="markup-dentro-de-linea-y-caracteres-especiales"&gt;
+&lt;h3&gt;Markup dentro de linea y caracteres especiales&lt;/h3&gt;
+&lt;p&gt;Por ejemplo estos es &lt;em&gt;cursiva&lt;/em&gt;, esto &lt;strong&gt;negrita&lt;/strong&gt;, esto &lt;a class="reference external" href="www.python.org"&gt;python&lt;/a&gt; y esto &lt;tt class="docutils literal"&gt;codigo&amp;nbsp;&amp;nbsp; fuente`&lt;/tt&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="thats"></category></entry></feed>
